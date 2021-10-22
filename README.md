@@ -1,9 +1,7 @@
 # Form
 Web Sire Form
 
-web site DaryaInfo
-
-ishlatish daryainfo.netlify.app
+Web Sire Form
 
 web sayt dasturchi Xudayberdiyev Og'abek
 
