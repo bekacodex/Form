@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Create Responsive Admin Dashboard using Html CSS & Javascript | Simple Dashboard Template Design -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style link-->
+    <link rel="stylesheet" href="style.css">
+    <!--icons link icon box-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!--icons 2 link i icons-->
+
+    <!--title-->
+    <title>Informatsiya Pepile</title>
+</head>
+
+<body>
+    <!--container-->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bxl-apple'></i></span>
+                        <span class="title">Brend Nomi</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bx-home'></i></span>
+                        <span class="title">Uy</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bx-mail-send'></i></span>
+                        <span class="title">xabarlashish</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bxs-user-voice'></i></span>
+                        <span class="title">Ish Beruvchilar</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bxs-phone-call'></i></span>
+                        <span class="title">Contact</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bxs-help-circle'></i></span>
+                        <span class="title">Yordam</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bx-reset'></i></span>
+                        <span class="title">Sozlamalar</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bx-barcode'></i></span>
+                        <span class="title">Parol</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bxs-user-plus'></i></span>
+                        <span class="title">Hisobga ocish</span>
+                    </a>
+                </li>
+                <!--li end-->
+                <!--li start-->
+                <li>
+                    <a href="#">
+                        <span class="icons"><i class='bx bxs-user'></i></span>
+                        <span class="title">Hisobga Kirish</span>
+                    </a>
+                </li>
+                <!--li end-->
+            </ul>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <!-- search  div -->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search Here">
+                        <i class='bx bx-search-alt'></i>
+                    </label>
+                </div>
+                <!-- user img -->
+                <div class="user">
+                    <img src="./img/pic (1).jpg" alt="">
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1.587</div>
+                        <div class="cardNome">Beka</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class='bx bx-happy-heart-eyes'></i>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">25%</div>
+                        <div class="cardNome">Sales</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class='bx bx-message-square-edit'></i>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">515</div>
+                        <div class="cardNome">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class='bx bxs-chat'></i>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">$1000</div>
+                        <div class="cardNome">Earning</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class='bx bxs-bookmark-heart'></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- add chards start-->
+            <div class="graphBx">
+
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="myChart1"></canvas>
+                    <canvas id="myChart2"></canvas>
+                </div>
+            </div>
+            <!-- add chards end-->
+
+
+
+            <!-- date list -->
+            <div class="details">
+                <!-- date list <i class="wi wi-time-1"></i> -->
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>
+                            Recent Orders
+                        </h2>
+                        <a href="#" class="btn">Wiew All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Start Refrigerator</td>
+                                <td> %1200 </td>
+                                <td> Paid </td>
+                                <td> <span class="status delivered">Delivered</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Window Closee</td>
+                                <td> %1000 </td>
+                                <td> Due </td>
+                                <td> <span class="status pending">Pending</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Spakers</td>
+                                <td> %6200 </td>
+                                <td> Paid </td>
+                                <td> <span class="status return">Return</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Hp Latop</td>
+                                <td> %200 </td>
+                                <td> Due </td>
+                                <td> <span class="status progress">In Progress</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Apple Wach</td>
+                                <td> %8200 </td>
+                                <td> Paid </td>
+                                <td> <span class="status delivered">Delivered</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Wll Fan</td>
+                                <td> %12000 </td>
+                                <td> Pending </td>
+                                <td> <span class="status pending">Pending</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Adidinmg Shoes</td>
+                                <td> %4200 </td>
+                                <td> Paid </td>
+                                <td> <span class="status return">Return</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Wll Add</td>
+                                <td> %7200 </td>
+                                <td> Progress </td>
+                                <td> <span class="status progress">In Progress</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Deminim Shoes</td>
+                                <td> %5200 </td>
+                                <td> Paid </td>
+                                <td> <span class="status pending">Pending</span> </td>
+                            </tr>
+                            <tr>
+                                <td> Apple Iphone</td>
+                                <td> %6200 </td>
+                                <td> Due </td>
+                                <td> <span class="status progress">In Progress</span> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- new cust start -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (2).jpg" alt=""></div>
+                            <td>
+                                <h4> Emiliy <br><span> Usa </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (3).jpg" alt=""></div>
+                            <td>
+                                <h4> Liza <br><span> Londoon </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (4).jpg" alt=""></div>
+                            <td>
+                                <h4> Aline <br><span> Africa </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (5).jpg" alt=""></div>
+                            <td>
+                                <h4> Dvid <br><span> Russia </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (6).jpg" alt=""></div>
+                            <td>
+                                <h4> Billie <br><span> New Zlandiya </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (7).jpg" alt=""></div>
+                            <td>
+                                <h4> Recher <br><span> Italiy </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (8).jpg" alt=""></div>
+                            <td>
+                                <h4> Lisa <br><span> Mexico </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (9).jpg" alt=""></div>
+                            <td>
+                                <h4> Alibe <br><span> Russia </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (10).jpg" alt=""></div>
+                            <td>
+                                <h4> Ritika <br><span> India </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="./img/pic (2).jpg" alt=""></div>
+                            <td>
+                                <h4> Kim Yun <br><span> Korea </span></h4>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="graphBx">
+
+                    <div class="box">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                    <div class="box">
+                        <canvas id="myChart4"></canvas>
+                        <canvas id="myChart5"></canvas>
+                    </div>
+                    <div class="box-all">
+                        <canvas id="myChart6"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- javafile -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- cards link -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <!-- chards file -->
+    <script src="./java/my_charts.js"></script>
+    <!-- java toggle -->
+    <script src="./java/java.js">
+    </script>
+</body>
+
+</html>
